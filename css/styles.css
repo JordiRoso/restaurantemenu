@@ -1,0 +1,426 @@
+/*creacion de espacios en la web con grid*/
+.main-head {
+  grid-area: header;
+  background-color: #93add7;
+}
+.content {
+  grid-area: content;
+  background-color: #fcfefc;
+  }
+
+
+.main-nav {
+  grid-area: nav;
+  background-color: #adc1e2;
+  }
+.side {
+  grid-area: sidebar;
+  background-color: #fcfefc;
+  
+}
+
+.main-footer {
+  grid-area: footer;
+  background-color:#aabddd;
+}
+
+ footer a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 10px;
+  
+}
+.containermenu{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #93add7;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  /* el MENU*/
+// TODO: Revisar list style
+
+
+
+
+  
+  
+#sticky{
+  
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+
+  /* Que la web sea responsive*/
+  @media (min-width: 100px){
+    .wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     "header"
+      "nav"
+      "content"
+      "sidebar"
+      "footer"
+      ;
+      }
+      ul {
+        display:none;
+        
+      }
+      input:checked  ~ ul{
+        display:block;
+      }
+      input {
+        display: none;
+      }
+      
+
+      a{
+        list-style: none;
+        text-decoration: none;
+        padding-right: 2em;
+       }
+       
+       li {
+        list-style: none;
+       }
+       #sticky{
+    
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+       }
+       label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      label :hover {
+        background:grey;
+      }
+      article div {
+        display: flex;
+        justify-content: center;
+       }
+       .pantalla2{
+        display: flex;
+        
+        width:100%;
+        height: 170px;
+        background-color: #fcfefc;
+        }
+        .pantalla1{
+          display: flex;
+          
+          width:100%;
+          height: 170px;
+          background-color: #fcfefc;
+          }
+          .header div {
+            display: flex;
+            justify-content: center;
+          }
+          .logo{
+            width: 100%;
+            height: 159px;
+          }
+          footer dv{
+            display: flex;
+            justify-content: center;
+            
+          }
+
+          aside div{
+            display: flex;
+            justify-content: center;
+          }
+          .petitmenu{
+            width: 100%;
+            height: 150px;
+          }
+
+          
+          .mail a{
+            display: flex;
+            width: 80%;
+            height: 25px;
+            background-color:  darkgray;
+            justify-content: center
+
+          }
+          footer ul {
+            display: flex;
+            justify-content: center
+          }
+          .pantalla3{
+            display: flex;
+            width: 100%;
+            height: 170px;
+          }
+          
+          
+          
+              
+              
+}
+      
+        
+        
+        
+        
+  
+  
+  @media (min-width: 360px){
+    .wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     "header"
+      "nav"
+      "content"
+      "sidebar"
+      "footer"
+      ;
+      }
+      ul {
+        display:none;
+        
+      }
+      input:checked  ~ ul{
+        display:block;
+      }
+      input {
+        display: none;
+      }
+      
+
+      a{
+        list-style: none;
+        text-decoration: none;
+        padding-right: 2em;
+       }
+       
+       li {
+        list-style: none;
+       }
+       #sticky{
+    
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+       }
+       label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      label :hover {
+        background:grey;
+      }
+      article div {
+        display: flex;
+        justify-content: center;
+       }
+       .pantalla2{
+        display: flex;
+        
+        width:100%;
+        height: 200px;
+        background-color: #fcfefc;
+        }
+        .pantalla1{
+          display: flex;
+          
+          width:100%;
+          height: 200px;
+          background-color: #fcfefc;
+          }
+          .header div {
+            display: flex;
+            justify-content: center;
+          }
+          .logo{
+            width: 100%;
+            height: 159px;
+          }
+          footer dv{
+            display: flex;
+            justify-content: center;
+            
+          }
+
+          aside div{
+            display: flex;
+            justify-content: center;
+          }
+          .petitmenu{
+            width: 100%;
+            height: 150px;
+          }
+
+          
+          .mail a{
+            display: flex;
+            width: 80%;
+            height: 25px;
+            background-color:  darkgray;
+            justify-content: center
+
+          }
+          footer ul {
+            display: flex;
+            justify-content: center
+          }
+          .pantalla3{
+            display: flex;
+            width: 100%;
+            height: 200px;
+          }
+          
+          
+          
+              
+              
+}
+      
+        
+        
+        
+        
+  
+
+  @media (min-width: 500px) {
+    .wrapper {
+      grid-template-columns: 1fr 3fr;
+      gap: 10px;
+      grid-template-areas:
+        "header  header"
+        "nav     nav"
+        "sidebar content"
+        "footer      footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: center
+    }
+     a {
+      list-style: none;
+      text-decoration: none;
+      padding-right: 2em;
+     }
+     li {
+      list-style: none;
+     }
+     #sticky{
+  
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+     }
+     label {
+      display: none;
+     }
+     .side{
+      width: 100%;
+     }
+
+     article div{
+      display: flex;
+      justify-content: center;
+     }
+     .pantalla2{
+      display: flex;
+      
+      width:100%;
+      height: 400px;
+      background-color:#fcfefc;
+      }
+
+
+      .pantalla1{
+        display: flex;
+        
+        width:100%;
+        height: 400px;
+        background-color: #fcfefc;
+        }
+        .pantalla3{
+          display: flex;
+          width: 100%;
+          height: 400px;
+        }
+        footer dv{
+          display: flex;
+          justify-content: center;
+          
+        }
+        
+        .mail a{
+          display: flex;
+          width: 80%;
+          height: 100px;
+          background-color:  darkgray;
+          justify-content: center
+
+        }
+        footer ul {
+          display: flex;
+          justify-content: center
+        }
+        .logo{
+          width: 100%;
+          height: 300px;
+        }
+        aside div{
+          display: flex;
+          justify-content: center;
+        }
+        .petitmenu{
+          width: 100%;
+          height: 300px;
+        }
+
+   }
+ 
